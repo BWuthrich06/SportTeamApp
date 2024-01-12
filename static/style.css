@@ -1,0 +1,29 @@
+body {
+    background-color: #040404
+    
+    ;
+}
+
+#sport_header {
+    color: #EF8318;
+}
+
+#email {
+    color: #233EE7;
+}
+
+#password {
+    color: #233EE7;
+}
+
+#sign_in {
+    color: orange;
+}
+
+#new_user {
+    color: orange;
+}
+
+#or {
+    color: white;
+}
