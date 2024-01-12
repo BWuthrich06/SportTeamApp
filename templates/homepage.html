@@ -1,5 +1,20 @@
 {% extends 'base.html' %}
 
-{% block title %}Welcome to SportsApp{% endblock %}
+{% block title %}Welcome to SportRoster{% endblock %}
 
-{% block body %}{% endblock %}
+{% block body %}
+<h2>Sign In</h2>
+<form action="login" method="POST">
+    <p id="email">Email<br><input type="text" name="email"></p>
+    <p id="password">Password<br><input type="text" name="password"></p>
+    <button><id="login_button" type="submit">Login</button>
+
+</form>
+<p>-OR-</p>
+<h2>New User?</h2>
+<form action="create_new_user">
+    <button><id="new_user_button" type=submit>Create New Account</button>
+</form>
+
+
+{% endblock %}
