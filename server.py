@@ -16,7 +16,29 @@ app.secret_key = secret_key
 app.jinja_env.undefined = StrictUndefined
 
 
+@app.route('/')
+def get_homepage():
+    """Homepage."""
+    return render_template('homepage.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+connect_to_db(app)
 
 if __name__ == "__main__":
-    connect_to_db(app)
     app.run(host="0.0.0.0", debug=True)
